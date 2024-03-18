@@ -1,0 +1,246 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a {
+    color: #3c96ed;
+    text-decoration: none;
+}
+
+body {
+    background: #fafafa;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left {
+    background-image: url(./assets/main-foto.png);
+    background-size: 28.125rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 37.5rem;
+    margin-bottom: 3.125rem;
+}
+
+.right {
+    padding-left: 1.25rem;
+}
+
+.login-painel {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.logo-img {
+    width: 10.9375rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"],
+input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid rgb(236, 234, 234);
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    margin-top: 0.625rem;
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+    width: 20rem;
+    color: #000;
+}
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]::focus,
+input[type="text"]::focus {
+    outline: 0;
+}
+
+input[type="submit"] {
+    width: 20rem;
+    margin-top: 0.625rem;
+    height: 1.875rem;
+    border: 0;
+    background-color: #3c96ed;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: #fff;
+    height: 60px;
+    border: 1px solid rgb(236, 234, 234);
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box p a {
+    font-weight: bold;
+    user-select: none;
+    /*  Não habilitar copiar(selecionar) texto  */
+}
+
+.get-app-panel {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.app-buttons {
+    margin-top: 1rem;
+}
+
+.app-buttons img{
+   height: 2.5rem;
+   padding: 0 0.125rem;
+}
+
+footer{
+    text-align: center;
+    height: 3.125rem;
+    margin-top: -3.125rem;
+}
+
+footer a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.text-small {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #808080;
+    text-transform: uppercase;
+    padding-left: 1.25rem;
+    display: inline-block;
+}
+
+/* Página SignUp */
+
+#container-signup {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    margin: 0.625rem 4.375rem;
+}
+
+.message span {
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    color: #8e8e8e;
+}
+
+.cta-button {
+    width: 20rem;
+    margin-top: 0.625rem;
+    height: 30px;
+    border: 0;
+    background-color: #3c96ed;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    cursor: pointer; 
+}
+
+.divisor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.625rem 0;  
+}
+
+.line{
+   height: 0.0625rem;
+   background-color: #e6e6e6;
+   width: 35%;
+}
+
+.divisor-tag {
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+}
+
+@media(max-width:850px){
+    .left{
+        display: none;
+    }
+    #container{
+        width: 70%;
+    }
+    .right{
+    padding-left: 0;
+    }
+}
+
+@media(max-width: 560px){
+    #container{
+        width: 90%;
+    }
+    #container-signup{
+        width: 90%;
+    }
+    input[type="password"],
+    input[type="text"],
+    input[type="submit"]{
+      width: 80%;  
+    }
+    .cta-button{
+        width: 80%;
+    }
+    .message{
+        margin: 0.625rem 1.5625rem;
+    }
+}
